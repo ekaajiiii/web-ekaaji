@@ -235,3 +235,9 @@ footer {
     font-weight: bold;
   }
 }
+
+h2.judul {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
