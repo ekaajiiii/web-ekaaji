@@ -5,6 +5,7 @@
 }
 
 body {
+  
   font-family: 'Segoe UI', sans-serif;
   background: #f0fff0;
   color: #333;
@@ -26,7 +27,7 @@ a {
 header {
   background: #388e3c;
   color: white;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .header-flex {
@@ -70,7 +71,7 @@ nav ul li a {
 h2 {
   margin-bottom: 20px;
   text-align: center;
-  color: #2e7d32;
+  color: #388e3c;
 }
 
 .produk-grid {
@@ -170,5 +171,67 @@ footer {
   nav ul {
     flex-direction: column;
     align-items: center;
+  }
+}
+.jasa-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+.jasa-list li {
+  background: #e8f5e9;
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 5px solid #388e3c;
+  border-radius: 5px;
+}
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+  }
+
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #388e3c;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 999;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    padding: 10px 0;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
   }
 }
